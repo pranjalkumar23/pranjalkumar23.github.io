@@ -70,7 +70,7 @@ const PROJECTS = [
       'Drop a pin anywhere on the world map and stream that region’s live radio instantly. Accounts, favorites, and station data are backed by Firebase Auth and Firestore, with Cloud Functions handling server-side logic like payment verification for premium features.',
     stack: ['Firebase Auth', 'Firestore', 'Cloud Functions', 'Interactive map UI'],
     repo: 'https://github.com/pranjalkumar23/tuneglobe',
-    demo: 'https://tuneglobe.netlify.app/',
+    demo: 'https://tuneglobe.pranjal.ai/',
     demoLabel: 'Live site →',
     note: null,
   },
