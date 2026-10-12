@@ -289,9 +289,9 @@ function Hero() {
           transition={{ duration: 0.5, delay: 1.5, ease: 'easeOut' }}
         >
           <div className="marquee-track">
-            <span>FULL-STACK DEVELOPER • BUILDER • PROBLEM SOLVER • SHIPPING PROJECTS •</span>
+            <span>TECHNICAL ADVISOR • BUILDER • MENTOR •</span>
             <span aria-hidden="true">
-              FULL-STACK DEVELOPER • BUILDER • PROBLEM SOLVER • SHIPPING PROJECTS •
+              TECHNICAL ADVISOR • BUILDER • MENTOR •
             </span>
           </div>
         </motion.div>
@@ -357,8 +357,7 @@ function About() {
       <div className="about-copy">
         {[
           "Hi, I'm Pranjal Kumar.",
-          "I build full-stack products end to end — from AI-powered graphs and autonomous agents to marketplaces, booking sites, and mobile tools. I like taking an idea from a blank file to something real people can use.",
-          "Take a look at what I've been building lately.",
+          "Engineering Leader & ex-Founder (Knackit) with 15+ years scaling distributed systems. Dedicated to mentoring and empowering India's next generation of builders.",
         ].map((line, i) => (
           <motion.p
             key={i}
@@ -551,7 +550,7 @@ function Contact() {
         viewport={{ once: true, amount: 0.6 }}
         variants={revealUp}
       >
-        Have a project in mind, or just want to say hi? Reach me at{' '}
+        Reach me at{' '}
         <motion.a
           href="mailto:pranjalkumar23@gmail.com"
           className="contact-link"
@@ -575,9 +574,6 @@ function Footer() {
       transition={{ duration: 0.6 }}
     >
       <div className="footer-links">
-        <a href="https://github.com/pranjalkumar23" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
         <a href="https://www.linkedin.com/in/pranjal-k/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
