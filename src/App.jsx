@@ -553,11 +553,11 @@ function Contact() {
       >
         Have a project in mind, or just want to say hi? Reach me at{' '}
         <motion.a
-          href="mailto:you@example.com"
+          href="mailto:pranjalkumar23@gmail.com"
           className="contact-link"
           whileHover={{ letterSpacing: '0.02em' }}
         >
-          you@example.com
+          pranjalkumar23@gmail.com
         </motion.a>
         .
       </motion.p>
@@ -575,10 +575,10 @@ function Footer() {
       transition={{ duration: 0.6 }}
     >
       <div className="footer-links">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/pranjalkumar23" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/pranjal-k/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
       </div>
