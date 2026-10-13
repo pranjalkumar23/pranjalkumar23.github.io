@@ -27,7 +27,6 @@ const PROJECTS = [
     details:
       'InciGraph maps relationships between chemicals, the products that use them, the brands behind those products, and who supplies them. Instead of clicking through filters, you type a question — "who sells titanium dioxide", "products using parabens" — and a natural-language parser resolves it into a graph query and renders the connected nodes live.',
     stack: ['Node.js', 'Vanilla JS', 'Rule-based NLU', 'Force-directed graph'],
-    repo: 'https://github.com/pranjalkumar23/incigraph',
     demo: 'https://incigraph.pranjal.ai/',
     demoLabel: 'Live demo →',
     note: null,
@@ -41,7 +40,6 @@ const PROJECTS = [
     details:
       'A multi-service pipeline: dedicated ingest workers pull flight and cruise fares on a schedule, a detector service compares each new price against that specific route’s own historical baseline, and only publishes a deal when it clears a quality bar. It never touches payments or bookings — every deal links straight out to the airline, cruise line, or OTA.',
     stack: ['Node.js services', 'Postgres', 'Scheduled ingestion', 'Next.js web app'],
-    repo: 'https://github.com/pranjalkumar23/travel-deals',
     demo: 'https://traveldeals.pranjal.ai/',
     demoLabel: 'Static preview →',
     note: 'Preview only — the live deal feed needs Postgres plus scheduled ingest/detector services, which can’t run on GitHub Pages.',
@@ -55,7 +53,6 @@ const PROJECTS = [
     details:
       'A complete barter marketplace: list what you have, browse a "wanted" board for what others are after, propose a swap, and track it through a matches dashboard with city-proximity-aware matching. Built with Next.js Server Actions, cookie-based sessions, and Zod validation.',
     stack: ['Next.js', 'Server Actions', 'Zod', 'Session auth'],
-    repo: 'https://github.com/pranjalkumar23/swapkaro',
     demo: 'https://swapkaro.pranjal.ai/',
     demoLabel: 'Static preview →',
     note: 'Preview only — Next.js Server Actions need a Node server, which GitHub Pages can’t run.',
@@ -69,7 +66,6 @@ const PROJECTS = [
     details:
       'Drop a pin anywhere on the world map and stream that region’s live radio instantly. Accounts, favorites, and station data are backed by Firebase Auth and Firestore, with Cloud Functions handling server-side logic like payment verification for premium features.',
     stack: ['Firebase Auth', 'Firestore', 'Cloud Functions', 'Interactive map UI'],
-    repo: 'https://github.com/pranjalkumar23/tuneglobe',
     demo: 'https://tuneglobe.pranjal.ai/',
     demoLabel: 'Live site →',
     note: null,
@@ -83,7 +79,6 @@ const PROJECTS = [
     details:
       'A design mockup for a Vedic astrology product: Panchang timing lookups and Kundali (birth chart) matching, written to feel rooted in tradition rather than gimmicky — plain-language explanations in Hindi or English with a clear verdict instead of vague mysticism.',
     stack: ['Static HTML/CSS/JS'],
-    repo: 'https://github.com/pranjalkumar23/kundali',
     demo: 'https://kundali.pranjal.ai/',
     demoLabel: 'Live demo →',
     note: null,
@@ -97,7 +92,6 @@ const PROJECTS = [
     details:
       'A multi-page marketing and booking site for a real vegetarian homestay in Shyamkhet, Bhowali — rooms, photo gallery, and a direct contact/enquiry flow, built to read as calm and trustworthy for travelers researching a stay near Kainchi Dham and Nainital.',
     stack: ['Static HTML/CSS/JS'],
-    repo: 'https://github.com/pranjalkumar23/central-house-homestay',
     demo: 'https://thecentralhouse.in/',
     demoLabel: 'Live site →',
     note: null,
@@ -111,7 +105,6 @@ const PROJECTS = [
     details:
       'The official resident-facing site for iTowers Exente, a 438-home Kolte-Patil gated community in Electronic City, Bengaluru — amenity info (rooftop pool, gym, clubhouse, tennis and basketball courts), announcements, and general access information for residents and prospective buyers.',
     stack: ['React', 'Static build'],
-    repo: 'https://github.com/pranjalkumar23/itowers-exente',
     demo: 'https://itowersexente.com/',
     demoLabel: 'Live site →',
     note: null,
@@ -125,7 +118,6 @@ const PROJECTS = [
     details:
       'The same product — a wind chime — explored through three completely different creative lenses: devotional temple-chime branding for an Indian audience, a poetic Hindi "curtain of verse" wind bell, and a minimal bronze-and-jade aesthetic drawn from Japanese furin. A study in how tone and visual language change the same idea.',
     stack: ['Static HTML/CSS/JS', 'Typography-led design'],
-    repo: 'https://github.com/pranjalkumar23/wind-chime-studio',
     demo: 'https://windchime.pranjal.ai/',
     demoLabel: 'Live demo →',
     note: null,
@@ -139,7 +131,6 @@ const PROJECTS = [
     details:
       'A fully on-device Android app: it reads bank and card SMS alerts, buckets spending into categories (savings, credit card, UPI, other), and generates monthly reports with spending patterns and reduction recommendations. No server, no cloud, no account — everything stays on the phone.',
     stack: ['Android', 'On-device parsing', 'No backend'],
-    repo: 'https://github.com/pranjalkumar23/expense-tracker',
     demo: null,
     demoLabel: null,
     note: 'Android app — no web demo.',
