@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react'
+import { createContext, useContext, useCallback, useEffect, useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring } from 'motion/react'
 
 const MouseContext = createContext(null)
@@ -17,10 +17,12 @@ export function MouseTracker({ children }) {
     return () => window.removeEventListener('pointermove', handler)
   }, [])
 
-  const subscribe = (fn) => {
+  // Stable identity so Eye's subscribing effect never tears down/re-runs on
+  // unrelated re-renders of MouseTracker (e.g. nav active-section changes).
+  const subscribe = useCallback((fn) => {
     listeners.current.add(fn)
     return () => listeners.current.delete(fn)
-  }
+  }, [])
 
   return <MouseContext.Provider value={subscribe}>{children}</MouseContext.Provider>
 }
@@ -77,6 +79,7 @@ export function Eye({ className = '' }) {
       const el = ref.current
       if (!el) return
       const rect = el.getBoundingClientRect()
+      if (rect.width < 1 || rect.height < 1) return
       const cx = rect.left + rect.width / 2
       const cy = rect.top + rect.height / 2
       const travelX = rect.width * 0.24
