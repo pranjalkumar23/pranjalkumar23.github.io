@@ -436,11 +436,6 @@ function ProjectDetail({ project }) {
           ))}
         </ul>
         <div className="project-detail-links">
-          {project.repo && (
-            <a href={project.repo} target="_blank" rel="noreferrer" className="project-link">
-              View source →
-            </a>
-          )}
           {project.demo && (
             <a href={project.demo} target="_blank" rel="noreferrer" className="project-link">
               {project.demoLabel || 'Live demo →'}
