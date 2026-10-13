@@ -143,6 +143,25 @@
   opacity: 1;
 }
 
+@media (max-width: 420px) {
+  .nav {
+    padding: 10px 12px;
+  }
+  .nav-mark {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+  .nav-links {
+    gap: 2px;
+    padding: 4px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    padding: 7px 8px;
+  }
+}
+
 .nav-links a.active {
   opacity: 1;
   color: var(--ink);
@@ -471,6 +490,16 @@
 
 .contact-heading {
   font-size: clamp(40px, 9vw, 96px);
+}
+
+/* The 40px floor on these clamp()s is wider than "LET'S CONNECT" can fit on
+   one line below ~400px, wrapping mid-word right through the eye glyph. */
+@media (max-width: 420px) {
+  .about-heading,
+  .work-heading,
+  .contact-heading {
+    font-size: clamp(26px, 9vw, 96px);
+  }
 }
 
 .contact-copy {
