@@ -42,7 +42,7 @@ const PROJECTS = [
     stack: ['Node.js services', 'Postgres', 'Scheduled ingestion', 'Next.js web app'],
     demo: 'https://traveldeals.pranjal.ai/',
     demoLabel: 'Static preview →',
-    note: 'Preview only — the live deal feed needs Postgres plus scheduled ingest/detector services, which can’t run on GitHub Pages.',
+    note: 'Due to confidentiality, Live Demo is not available.',
   },
   {
     slug: 'swapkaro',
@@ -55,7 +55,7 @@ const PROJECTS = [
     stack: ['Next.js', 'Server Actions', 'Zod', 'Session auth'],
     demo: 'https://swapkaro.pranjal.ai/',
     demoLabel: 'Static preview →',
-    note: 'Preview only — Next.js Server Actions need a Node server, which GitHub Pages can’t run.',
+    note: 'Due to confidentiality, Live Demo is not available.',
   },
   {
     slug: 'tuneglobe',
