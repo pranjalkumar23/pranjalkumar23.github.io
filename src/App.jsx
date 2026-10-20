@@ -123,6 +123,19 @@ const PROJECTS = [
     note: null,
   },
   {
+    slug: 'competitor-screener',
+    title: 'Competitor Opportunity Screener',
+    tag: 'Finance / Data',
+    description:
+      'Shows which sectors are outperforming the S&P 500, then maps any company to its competitors with live ratings, earnings dates and dividends.',
+    details:
+      'A research screener in two modes. Discover ranks sectors and themes by 1-month, 3-month and year-to-date strength against the S&P 500 and lists the large-cap stocks inside each. Analyze takes a ticker and lines it up against its competitors on forward P/E, analyst rating and price-target upside, latest-quarter growth, next earnings date and dividend history, with an evidence popover behind every analyst rating. Market data comes live from Yahoo Finance through a small serverless API. It screens what is performing; it does not give investment advice.',
+    stack: ['Vanilla JS', 'Python serverless API', 'Yahoo Finance data', 'Vercel'],
+    demo: 'https://competitor.pranjal.ai/',
+    demoLabel: 'Live demo →',
+    note: null,
+  },
+  {
     slug: 'expense-tracker',
     title: 'Expense Tracker',
     tag: 'Android / On-device',
